@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cabecera */
+.cabecera{
+    margin-top: 40px;
+    background-color: grey;
+    color: white;
+    text-align: center;    
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+/* Principal */
+.row{
+    display: flex;
+    flex-direction: row; /* Valor por defecto */
+    justify-content: center;
+    /*background-color: blue;*/
+}
+
+.column{
+    /*width: 100px;*/
+    flex: 1;
+}
+
+.column > div{
+    max-width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin: 10px 12px;
+    height: 70vh;
+    overflow: auto;
+}
+/* Pie */
+.pie{    
+    margin-top: 10px;
+    background-color: grey;
+    color: white;
+    text-align: center;    
+    padding: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width:800px){
+    .row{
+        flex-direction: column;
+    }
+}
