@@ -1,0 +1,17 @@
+1.- Creo repositorio en mi GitHub
+2.- Obtengo la URL para realizar la clonacion en mi Visual Studio Code
+git clone + URL Git GitHub
+3.- Añado los ficheros que quiero subir (HTML,CSS)
+git checkout -b master
+
+git add .
+git commit -m "añado descripcion del commit"
+git push origin master
+
+4.- Abrimos netlify
+5.- Creamos un nuevo site
+6.- Importamos desde GitHub
+
+7.- Configuramos netlify
+7.1.- Las ubicacion de las imagenes en el codigo
+7.2.- Cambiar nombre URL: Domain management > Custom domains > Option > Edit site name

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .flex-item-left{
+            background-color: grey;
+            padding: 10px;
+            margin: 10px;
+            flex: 33%;
+        }
+
+        .flex-item-right{
+            background-color: blue;
+            padding: 10px;
+            margin: 10px;
+            flex: 33%;
+
+        }
+
+        .flex-item-center{
+            background-color: red;
+            padding: 10px;
+            margin: 10px;
+            flex: 33%;
+
+        }
+
+
+        /* Responsive Layout */
+        @media (max-width: 800px){
+            .flex-container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="flex-container"> 
+        <div class="flex-item-left">1</div>
+        <div class="flex-item-center">2</div>        
+        <div class="flex-item-right">3</div>
+    </div>
+
+</body>
+</html>

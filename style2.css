@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    background-color: black;
+    color: white;
+    
+}
+
+.navbar > div{
+    flex-direction: row;
+    margin-right: 10px;
+    padding: 15px;
+}
+
+.icono{
+    background-color: red;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white
+}
+
+.navbar > div:hover{
+    background-color: grey;
+    
+}
+
+.jc_bh_superior{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top:0;
+}
+
+.jc_bh_inferior{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+}
+
+
+@media (max-width:600px){
+    .pequeno{display:none!important}
+}
+
+}
